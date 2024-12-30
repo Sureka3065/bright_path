@@ -1,0 +1,111 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:id="@+id/main"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/bg1"
+    tools:context=".Login">
+
+    <!-- res/layout/activity_login.xml -->
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        tools:context=".LoginActivity"
+        tools:layout_editor_absoluteX="-99dp"
+        tools:layout_editor_absoluteY="128dp">
+
+        <!-- Welcome Text -->
+        <TextView
+            android:id="@+id/welcomeText"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_centerHorizontal="true"
+            android:layout_marginStart="35dp"
+            android:layout_marginTop="215dp"
+            android:text="Welcome"
+            android:fontFamily="@font/jacques_francois"
+            android:textColor="#333333"
+            android:textSize="38sp"
+            android:textStyle="bold" />
+
+        <TextView
+            android:id="@+id/subtitleText"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/welcomeText"
+            android:layout_centerHorizontal="true"
+            android:layout_marginStart="35dp"
+            android:layout_marginTop="8dp"
+            android:fontFamily="@font/jacques_francois"
+            android:text="Login to continue"
+            android:textColor="#666666"
+            android:textSize="28sp" />
+
+        <!-- Username Field -->
+        <EditText
+            android:id="@+id/usernameField"
+            android:layout_width="300dp"
+            android:layout_height="50dp"
+            android:layout_below="@id/subtitleText"
+            android:layout_centerHorizontal="true"
+            android:layout_marginStart="35dp"
+            android:layout_marginTop="210dp"
+            android:background="@drawable/edt_bg"
+            android:fontFamily="@font/jacques_francois"
+            android:hint="Email ID"
+            android:padding="10dp"
+            android:textColorHint="#000000" />
+        <EditText
+            android:id="@+id/passwordField"
+            android:layout_width="300dp"
+            android:layout_height="50dp"
+            android:layout_below="@id/usernameField"
+            android:layout_centerHorizontal="true"
+            android:layout_marginTop="20dp"
+            android:background="@drawable/edt_bg"
+            android:hint="Password"
+            android:inputType="textPassword"
+            android:fontFamily="@font/jacques_francois"
+            android:padding="10dp"
+            android:textColorHint="#000000" />
+
+
+        <!-- Login Button -->
+        <androidx.appcompat.widget.AppCompatButton
+            android:id="@+id/loginButton"
+            android:layout_width="300dp"
+            android:layout_height="50dp"
+            android:layout_below="@id/passwordField"
+            android:layout_centerHorizontal="true"
+            android:layout_marginTop="30dp"
+            android:background="@drawable/edt_bg1"
+            android:text="Login"
+            android:textAllCaps="false"
+            android:fontFamily="@font/jacques_francois"
+            android:textColor="#FFFFFF"
+            android:textStyle="bold" />
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignBottom="@+id/loginButton"
+            android:layout_marginStart="80dp"
+            android:textColor="#000000"
+            android:fontFamily="@font/jacques_francois"
+            android:layout_marginBottom="-62dp"
+            android:text="New Member? " />
+
+        <TextView
+            android:id="@+id/account"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignBottom="@+id/loginButton"
+            android:textColor="#000000"
+            android:fontFamily="@font/jacques_francois"
+            android:layout_marginStart="180dp"
+            android:layout_marginBottom="-62dp"
+            android:text="Create Account" />
+
+    </RelativeLayout>
+</androidx.constraintlayout.widget.ConstraintLayout>

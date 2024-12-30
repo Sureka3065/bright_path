@@ -1,0 +1,134 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:padding="16dp"
+    android:background="@drawable/bg1">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="80dp"
+        android:orientation="vertical">
+
+        <!-- Title -->
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Hello"
+            android:textColor="#000000"
+            android:textSize="30sp"
+            android:textStyle="bold"
+            android:fontFamily="@font/jacques_francois"
+            android:layout_marginTop="20dp" />
+
+        <!-- Subtitle -->
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Create your account"
+            android:fontFamily="@font/jacques_francois"
+            android:textColor="#000000"
+            android:textSize="20sp"
+            android:layout_marginBottom="20dp" />
+
+        <EditText
+            android:id="@+id/name"
+            android:layout_width="320dp"
+            android:layout_height="45dp"
+            android:hint="Name"
+            android:fontFamily="@font/jacques_francois"
+            android:gravity="center"
+            android:textColor="#000000"
+            android:background="@drawable/edt_bg"
+            android:layout_marginTop="40dp"
+            android:layout_marginStart="28dp"
+            android:padding="12dp"
+            android:layout_marginBottom="16dp" />
+
+        <!-- Email -->
+        <EditText
+            android:id="@+id/editEmail"
+            android:layout_width="320dp"
+            android:layout_height="45dp"
+            android:hint="E-mail ID"
+            android:fontFamily="@font/jacques_francois"
+            android:gravity="center"
+            android:textColor="#000000"
+            android:background="@drawable/edt_bg"
+            android:layout_marginTop="30dp"
+            android:layout_marginStart="28dp"
+            android:padding="12dp"
+            android:layout_marginBottom="16dp" />
+
+        <!-- Phone Number -->
+        <EditText
+            android:id="@+id/editPhone"
+            android:layout_width="320dp"
+            android:layout_height="45dp"
+            android:hint="Phone Number"
+            android:fontFamily="@font/jacques_francois"
+            android:background="@drawable/edt_bg"
+            android:textColor="#000000"
+            android:layout_marginTop="30dp"
+            android:gravity="center"
+            android:layout_marginStart="28dp"
+            android:padding="12dp"
+            android:layout_marginBottom="16dp" />
+
+        <!-- Password -->
+        <EditText
+            android:id="@+id/editPassword"
+            android:layout_width="320dp"
+            android:layout_height="45dp"
+            android:hint="Password"
+            android:layout_marginTop="30dp"
+            android:layout_marginStart="28dp"
+            android:fontFamily="@font/jacques_francois"
+            android:background="@drawable/edt_bg"
+            android:gravity="center"
+            android:textColor="#000000"
+            android:padding="12dp"
+            android:inputType="textPassword"
+            android:layout_marginBottom="16dp" />
+        <EditText
+            android:id="@+id/school"
+            android:layout_width="320dp"
+            android:layout_height="45dp"
+            android:hint="Schoolname"
+            android:layout_marginTop="30dp"
+            android:layout_marginStart="28dp"
+            android:fontFamily="@font/jacques_francois"
+            android:background="@drawable/edt_bg"
+            android:gravity="center"
+            android:textColor="#000000"
+            android:padding="12dp"
+            android:layout_marginBottom="16dp" />
+        <EditText
+            android:id="@+id/standard"
+            android:layout_width="320dp"
+            android:layout_height="45dp"
+            android:hint="Standard"
+            android:layout_marginTop="30dp"
+            android:layout_marginStart="28dp"
+            android:fontFamily="@font/jacques_francois"
+            android:background="@drawable/edt_bg"
+            android:gravity="center"
+            android:textColor="#000000"
+            android:padding="12dp"
+            android:layout_marginBottom="16dp" />
+
+        <androidx.appcompat.widget.AppCompatButton
+            android:id="@+id/btRegister"
+            android:layout_width="320dp"
+            android:layout_height="45dp"
+            android:fontFamily="@font/jacques_francois"
+            android:text="Register"
+            android:background="@drawable/edt_bg6"
+            android:layout_marginTop="30dp"
+            android:layout_marginStart="28dp"
+            android:textColor="#FFFFFF"
+            android:padding="12dp"
+            android:layout_marginBottom="20dp" />
+    </LinearLayout>
+</ScrollView>
